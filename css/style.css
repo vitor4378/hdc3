@@ -1,0 +1,340 @@
+/*corpo td do site/se for ativado o parallax sera desativado*/
+#corpo-td{
+  background-color: var(--cor7);
+
+}
+/*variaveis de cor*/
+:root {
+  --cor1: #4b0ac5;/*Principal cor dos btn e do site*/
+  --cor2: #ffffff;/*Segunda cor de fundo/ da barra de pesquisa*/
+  --cor3: #313131;/*sub cor e cor da barra de pesquisa */
+  --cor4: #ffffff;/*Principal cor das letras*/
+  --cor5: rgb(255, 255, 255);/*cor das letras dos btn*/
+  --cor6: #00000061;/*cor de fundo da parte de cima'*/
+  --cor7: black;/*cor do site td*/
+  --corcard: rgb(255, 255, 255);/*cor dos cardes  produto*/
+  --textcard:black;
+  --cort: rgb(255, 255, 255);/*cor dos titulos */
+  --cortrabalheconosc:rgb(255, 255, 255);
+}
+
+/*Gerais*/
+body { 
+  font-family: 'roboto', sans-serif;
+  background-color: var(--cor7);
+}
+
+.row {
+  margin: 0;
+  border-color: var(--cor7);
+}
+
+.container {
+  padding: 70px 0;
+
+}
+
+p,
+li {
+  color: var(--cor2);
+  font-size: 14px;
+}
+
+/*barra de navegaçao*/
+head,
+.navbar {
+  background-color: var(--cor3);
+}
+
+#nav-container {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#logo {
+  width: 75px;
+}
+
+.navbar-brand {
+  padding: 0;
+  color:var(--cor4);
+}
+
+#navbar-links a {
+  color: var(--cor4);
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 1rem .8rem;
+}
+
+/*Slide*/
+.container-fluid {
+  padding: 0;
+}
+
+#mainSlider .carousel-inner,
+#mainSlider .carousel-item {
+  height: 90vh;
+}
+
+#mainSlider .carousel-capition {
+  top: 30%;
+}
+
+#mainSlider .carousel-caption h2 {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+#mainSlider .carousel-caption p {
+  font-size: 22px;
+  font-weight: 300;
+  margin-bottom: 100px;
+  color:var(--cor5)
+}
+
+.main-btn {
+  background-color:var(--cor1);
+  color:var(--cor5);
+  text-transform: uppercase;
+  width: 200px;
+  height: 60px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: 3px solid transparent;
+  transition: .5s;
+}
+
+.main-btn:hover {
+  text-decoration: none;
+  color: var(--cor4);
+  background-color: transparent;
+  border-color: var(--cor1);
+}
+
+.corousel-indicators .active {
+  border-color: var(--cor1);
+}
+
+/*Sobre a empresa*/
+#about-area {
+  background-color:var(--cor6);
+}
+
+.main-title {
+  color:var(--cort);
+  margin: 0 0 65px 0;
+  font-size: 40px;
+  text-align: center;
+}
+
+
+.main-title::after {
+  content: "";
+  border-top: 2px solid #ffffff;
+  width: 15px;
+  position: absolute;
+  top: 60px;
+  left: 42.5%;
+}
+
+.about-title {
+  font-size: 17px;
+  color: var(--cor2);
+  text-transform: uppercase;
+  font-weight: bold;
+
+}
+
+#about-list li {
+  line-height: 30px;
+
+}
+
+#about-list i {
+  color:rgb(3, 180, 3);
+  margin-right: 15px;
+}
+
+/*Serviços*/
+.service-box {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.service-box i,.service-box h4 {
+  transition: .5s;
+  color: var(cort);
+}
+
+.service-box i {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: var(--cor2);
+}
+
+.service-box h4 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  
+}
+
+.service-box:hover>i,
+.service-box:hover>h4 {
+  color: var(--cor1);
+}
+
+/*Dados*/
+.circle-box div {
+  padding: 0 40px;
+}
+
+.progressbar-text {
+  font-weight: bold;
+  font-size: 32px;
+}
+
+#data-area p {
+  color: var(--cor2);
+  text-align: center;
+  font-size: 26px;
+  margin-top: 20px;
+}
+
+/*produto*/
+#containercard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px; 
+}
+
+.card-body {
+  background-color: var(--corcard); 
+  border: 1px solid var(--bordercolor);
+}
+
+.card-title, .card-text {
+  color: var(--textcard);
+}
+
+.btn-card {
+  color: var(--cor1);
+}
+
+/*Trabalhe conosco*/
+.h4-tbc{
+  color: red;
+}
+
+#apply-area {
+  height: 500px;
+}
+
+#apply-area .container-fluid, #apply-area .row {
+  height: 100%;
+}
+
+#apply-area .apply-box {
+  padding: 70px 50px;
+  text-align: center;
+}
+
+#campany-img{
+  background-image: url("../img/empresa.jpg");
+  background-size: cover;
+  height: 100%;
+}
+#pattern-img h4, #pattern-img p {
+  color:var(--cor2);
+}
+#pattern-img h4 {
+     margin-top:8%;
+     margin-bottom: 20px;
+     text-transform: uppercase ;
+     
+}
+#pattern-img p {
+ margin-bottom: 10px;
+ color:var(--cortrabalheconosc);
+}
+
+#apply-btn {
+  display: block;
+  height: auto;
+  width: 180px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  background-color: transparent;
+  border-color: var(--cor4);
+}
+
+#apply-btn:hover {
+  border-color:var(--cor1);
+  background-color: var(--cor1);
+}
+
+/*Portifolio*/
+.project-box{
+  margin-bottom: 30px;
+}
+
+#filter-btn-box{
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+#portifolio-area .filter-btn{
+  color: var(--cor2);
+  border: 1px solid var(--cor2);
+  background-color: transparent;
+  text-transform: none;
+  margin: 0 15px;
+  min-width: 100px;
+  width: auto;
+  height:40px;
+  line-height: 40px;
+  padding: 0 40px;
+}
+
+#portifolio-area .filter-btn.active, #portifolio-area .filter-btn:hover {
+  color:var(--cor4);
+  background-color: var(--cor1);
+  border-color: var(--cor1);
+}
+/*contact-btn*/
+  #contact-button {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    z-index: 1000; /* Certifique-se de que o z-index seja maior do que outros elementos para garantir que o botão esteja sempre visível */
+    background-color: #25d366; 
+    border: none;
+    border-radius: 50%; 
+    width: 60px;
+    height: 60px;
+   /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);*/ /* Sombra suave */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact-button img {
+    width: 40px; 
+    height: 40px;
+    margin: 7px;
+}
+
+#contact-button:hover {
+    background-color: rgba(36, 148, 240, 0.936); /* Cor de fundo do botão ao passar o mouse */
+}
+
+/*roda pé*/
+.roda-pe{
+  background-color:var(--cor7) ;
+  border-radius: 10px;
+  text-align: center;
+}
+.roda-pefonte{
+  color: white;
+}
